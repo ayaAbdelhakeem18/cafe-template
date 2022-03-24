@@ -1,0 +1,260 @@
+/*start global rules*/
+
+* { box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+     -moz-box-sizing : border-box;
+   }
+ html{
+     scroll-behavior: smooth;
+   }
+body{
+    font-family: 'Fredoka', sans-serif;
+    margin: 0px;
+    background-color: #8080800f;
+  }
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 100px;
+    margin-right:100px;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }}
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/*end global rules*/
+/*start components*/
+.special-heading {
+    position: relative;
+    top: -116px;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 4px;
+    font-size: medium;
+    left: 39%;
+    letter-spacing: 7px;
+}
+/*end components*/
+/*start home*/
+nav{
+    position: fixed;
+    top: -18px;
+    width: 100%;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: black;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+nav ul li {
+    margin: 0px;
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+nav ul li:hover {
+background-color: white;
+}
+nav ul li a:hover{
+color: black;
+}
+.home h1{
+    margin-top: 190px;
+    text-align: center;  
+    position: relative;
+    top: 325px;
+    font-size: 86px;
+    color: white;
+}
+.home{
+    background-image: url(../images/1.jpg);
+position: relative;
+top: -319px;
+min-height: 100vh;
+width: 100%;
+filter: grayscale(50%);
+}
+.text1{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    background-color: black;
+    margin-left: 40px;
+    padding: 7px;
+    margin-bottom: 7px;
+    font-size: small;
+}
+.text2{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    margin-right: 40px;
+    padding: 7px;
+    margin-bottom: 7px;
+    font-size: medium;
+    right: 0;
+}
+.circles{
+    display: flex;
+    position: absolute;
+    list-style: none;
+    right: 50%;
+    bottom: 0px;
+}
+.circles li i{
+    color: transparent;
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 1px;
+}
+.activ-circle{
+    background-color: white;
+}
+.page-one{
+    display: none;
+}
+.page-two{
+    display: block;
+    position: relative;
+    top: -319px;
+min-height: 750px;
+width: 100%;
+filter: grayscale(50%);
+background-image: url(../images/5.jpg);
+}
+.home-text{
+    position: absolute;
+    background-color: rgb(128 128 128 / 40%);
+    width: 48%;
+    top: 436px;
+    padding: 20px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+/*end home*/
+/*start about*/
+.about{
+line-height: 1.5;
+}
+.quote{
+    margin-top: 52px;
+    border-left: 6px solid #ccc;
+    background-color:    #7575751c;
+    padding: 20px;
+    font-size: larger;
+
+}
+.about img{
+    filter: grayscale(50%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.about .info{
+    padding: 15px;
+}
+.about .info .fp-text{
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/*end about*/
+/*start services*/
+.services{
+    margin-top: 200px;
+}
+.services .menu-heading{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 4px;
+}
+.h-span{
+    display: inline-block;
+    width: 49%;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+.activ{
+    background-color: grey;
+    color: white;
+}
+.services h6{
+    font-size: large;
+}
+.services img{
+    filter: grayscale(50%);
+    margin-top: 50px;
+}
+.eat{
+display: block;
+}
+.drink{
+display: none;
+}
+/*end services*/
+/*start contact us*/
+.contact-us{
+    margin-top: 200px;
+
+}
+.fiy{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-weight: 400; 
+}
+.sp-bold{
+    font-weight: 800;
+}
+.contact-us p{
+    line-height: 1.5;
+}
+.contact-us input{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px; ;
+    border: 1px solid #cecaca;
+}
+.contact-us  .submit{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+footer{
+    padding: 70px;
+    text-align: center;
+    background-color: #cecaca;
+    margin-top: 20px;
+}
+footer a{
+    font-size: larger;
+    font-weight: 400;
+}
+/*end contact us*/
